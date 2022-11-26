@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> kobiet </title>
+    <link rel="stylesheet" href="web7.css">
+</head>
+<body>
+    <p class="test">Đây là một văn bản</p>
+    <div class="block test">Đây là một đoạn văn bản khác.</div>
+    <p>Đây là một đoạn văn bản khác tiếp theo</p>
+
+    <script>
+        // Chọn đến phần tử có class là test
+        var matches = document.getElementsByClassName("test");
+
+        // Hiển thị số lượng phần tử có class test
+        document.write("Số Phần tử có class test: " + matches.length);
+
+        // In đậm text của phần tử đầu tiên chọn được
+        matches[0].style.fontWeight = "bold";
+
+        // In nghiêng phần tử cuối cùng chọn được
+        matches[matches.length - 1].style.fontStyle = "italic";
+
+        // Thêm background màu đỏ cho các phần tử vòng lặp
+        for (var e in matches) {
+            matches[e].style.background = "red";
+        }
+    </script>
+</body>
